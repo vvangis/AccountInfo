@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <title>Header - Collapse suggestion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+  </head>
+<body>
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-md">
+  <a class="navbar-brand" ref="#"><img id="logo" src="./assets/LogoStoiximanL"/></a>
+  
+  <div class="navbar-collapse" id="main-navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">ΣΤΟΙΧΗΜΑ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LIVE ΣΤΟΙΧΗΜΑ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">VIRTUALS<span class="color">HOT</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#">CASINO</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#">LIVE CASINO</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#">VEGAS</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#">LIVE VEGAS</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#">FANTASY<span class="color">HOT</span></a>
+      </li>
+    </ul>
+  </div>
+  <div class=" navbar-right" id="right-navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" id="offers" href="#"><img  class="menuIcons" src="./assets/gift.png"/><span class="notifications"></span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#"><img class="menuIcons"  src="./assets/search.png"/></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#"><img class="menuIcons" src="./assets/help.png"/></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img class="menuIcons" src="./assets/message.png"/></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" id="showamount" href="#"><span class="amount"></span><img class="expandIcon" src="./assets/arrow-down.png"/></a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" id="deposit" href="#">ΚΑΤΑΘΕΣΗ</a>
+      </li>
+    </ul>
+  </div>
+  
+</nav>
+<div class="hr"></div>
+<nav class="navbar navbar-expand-md" id="medium-navigation">
+	<div class="navbar-collapse" >
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link active" href="#">ΣΤΟΙΧΗΜΑ</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">LIVE ΣΤΟΙΧΗΜΑ</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">VIRTUALS<span class="color">HOT</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">CASINO</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">LIVE CASINO</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">VEGAS</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">LIVE VEGAS</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">FANTASY<span class="color">HOT</span></a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+<div class="accountWrap">
+	<div class="indicatorWrap">
+		<div class="indicator"></div>
+	</div>
+	<div class="incognitoRow">
+		<div style="padding-bottom:5px"><img  src="./assets/incognito.png"/><span style="margin-left:9px;">Incognito Mode</span></div>
+		<div class="switch_box box_1">
+			<input type="checkbox" class="switch_1"/>
+		</div>
+	</div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px"><span id="user"></span></div>
+		<div class="refresh">
+			<img src="./assets/refresh.png"/>
+			<span class="amount" style="margin-left:9px;"></span>
+		</div>
+		
+	</div>
+	<div class="break"></div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px"><span >Διαθέσιμα για ανάληψη</span></div>
+		<div class="refresh">
+			<span class="withdrawal grey" style="margin-left:9px;"></span>
+		</div>
+		
+	</div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px"><span >Διαθέσιμα για στοιχηματισμό</span></div>
+		<div class="refresh">
+			<span class="tobet grey" style="margin-left:9px;"></span>
+		</div>
+		
+	</div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px" class="blue"><span >Ανοιχτά στοιχήματα</span></div>
+		<div class="refresh">
+			<span class="openbets grey" style="margin-left:9px;"></span>
+		</div>
+		
+	</div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px"><span class="blue">Πόντοι Road to Glory</span></div>
+		<div class="refresh">
+			<span class="loyalty grey" style="margin-left:9px;"></span>
+		</div>
+		
+	</div>
+	<div class="break"></div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px" class=""><span ><b>Bonus</b></span> <span class="colorLocked">LOCKED</span></div>
+		<div class="refresh">
+			<span class="unlockBonus" style="margin-left:9px;"></span>
+		</div>
+	</div>
+	
+	<div class="currentStatusRow">
+		
+		<div class="progress">
+			<div class="progress-bar progress-bar-accomplished" id="bonusAccomplished" role="progressbar" style="width:0%">
+    		</div>
+			<div class="progressIcons" id="unlocked">
+				<img  src="./assets/unlocked.png">
+			</div>
+			<div class="progress-bar progress-bar-left" id="bonusleft" role="progressbar" style="width:50%">
+			
+			</div>
+			<div class="progress-bar progress-bar-tilltheend" id="bonustilltheend" role="progressbar" style="width:50%">
+			
+			</div>
+			<div class="progressIcons" id="unlockedBonus">
+				<img  src="./assets/unlockedBonus.png">
+			</div>
+		</div>
+	</div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px"><span >Τζιραρισμένο</span></div>
+		<div class="refresh">
+			<span class="played grey" style="margin-left:9px;"></span>
+		</div>
+		
+	</div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px"><span >Υπόλοιπο ξεκλειδώματος Bonus</span></div>
+		<div class="refresh">
+			<span class="toUnlock grey" style="margin-left:9px;"></span>
+		</div>
+		
+	</div>
+	<div class="currentStatusRow">
+		<div style="padding-bottom:5px"><span >Υπόλοιπο Ανάληψης Bonus</span></div>
+		<div class="refresh">
+			<span class="unlockWBonus grey" style="margin-left:9px;"></span>
+		</div>
+		
+	</div>
+	<div class="currentStatusRow">
+		<div class= "button">Ο ΛΟΓΑΡΙΑΣΜΟΣ ΜΟΥ</div>
+		
+			<img style="width:20px;height:24px" src="./assets/signout.png">
+		
+		
+	</div>
+</div>
+<!-- JQUERY + BOOTSTRAP framework-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

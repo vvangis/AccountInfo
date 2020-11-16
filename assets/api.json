@@ -1,0 +1,15 @@
+{
+	"account":"vvangis",
+	"offers": "12",
+	"amount":"2104,16€",
+	"availlableToBet": "3,16€",
+	"availlableToWithdrawal": "3,16€",
+	"openBets":"10,00€",
+	"loyalty":"1440",
+	"bonus":{
+		"played": "60€",
+		"expectedMore":"40€",
+		"unlockBonus":"100€",
+		"toGetBonus":"940€"
+	}
+}

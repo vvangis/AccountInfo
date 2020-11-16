@@ -1,0 +1,380 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+/**** navigation bar ****/
+
+.navbar {
+  background-image: linear-gradient(90deg, #1A60A8 45%, #101419 100%);
+  display: flex; 
+  justify-content: space-between;
+  height: 62px;
+  font-size: .9rem;
+  line-height: 16px;
+  letter-spacing: .4px;
+  padding:8px;
+  
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 0.5em;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+	
+}
+#logo{
+	max-width:110px!important;
+}
+#medium-navigation{
+	display:none!important;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: .4px;
+}
+
+.nav-link {
+  margin-right: .5em!important;
+}
+a.nav-link{
+	text-decoration:none;
+	color: #fff;
+	opacity:0.7!important;	
+	
+}
+a.nav-link:hover {
+	text-decoration:none;
+	color: #fff!important;
+	opacity:1!important;
+	
+}
+.nav-link.active {
+	
+	opacity:1!important;
+	font-weight:700!important;
+	color:#fff!important;
+}
+.navbar-right, .navbar-collapse{
+	margin-top: 8px;	
+}
+.navbar-right{
+	justify-content: flex-end;	
+}
+.color {
+  background-color: #FF0042;
+  border-radius: 8px;
+  width: 26px;
+  height: 12px;
+  font-size:.6rem;
+  padding:2px 4px;
+  margin:2px;
+}
+#deposit{
+	color:#fff;
+	opacity:1!important;
+	padding:8px;
+	background-color: #FF0042;
+	border-radius: 2px;
+	
+	height: 36px;
+	margin: 0!important;
+    overflow: visible;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+	padding-left:0;
+	padding-right:0;
+}
+
+.menuIcons{
+	width:22px;
+}
+#offers{
+	display:flux;
+	background-color: #101419;
+	 border-radius: 8px 8px 8px 8px;
+	 opacity: 0.87;
+	 width: 38px;
+	 height: 38px;
+	 padding-right: 8px;
+    padding-left: 8px;
+}
+.notifications {
+	position: absolute;
+    right: 268px;
+    top: 16px;
+	font-size:8px;
+}
+.expandIcon{
+	width:10px;
+	margin-left:3px;
+}
+.amount, #eur{
+	font-size:.75rem;	
+}
+
+	/****Account info styling****/
+.accountWrap{
+	position:absolute;
+	z-index:1;
+	background-color: #FFFFFF;
+	width: 289px;
+	right: 21px;
+	top: 60px;
+	font-size: 1.2em;
+	display:none;
+	padding-bottom:5px;
+	line-height:1.5em
+}
+.indicatorWrap{
+	display: flex;
+    height: 7px;
+    padding: 0px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+}
+.indicator{
+	width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #E0E4EA;
+}
+.incognitoRow{
+	display: flex;
+    height: 40px;
+    padding: 8px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #E0E4EA;
+    justify-content: flex-end;
+   
+}
+
+.switch_box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: flex-end;
+	-webkit-box-align: right;
+	-ms-flex-align: center;
+	align-items: right;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	align-content: space-between;
+
+}
+
+/* Switch Toggle */
+
+input[type="checkbox"].switch_1{
+	font-size: 30px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	width: 48px;
+	height: 24px;
+	background: #B6BCC6;
+	border-radius: 3em;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+  }
+  
+  input[type="checkbox"].switch_1:checked{
+	background: #1A60A8;
+  }
+  
+  input[type="checkbox"].switch_1:after{
+	position: absolute;
+	content: "";
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: #fff;
+	-webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+	        box-shadow: 0 0 .25em rgba(0,0,0,.3);
+	-webkit-transform: scale(.7);
+	        transform: scale(.7);
+	left: 0;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+  }
+  
+  input[type="checkbox"].switch_1:checked:after{
+	left: calc(100% - .8em);
+  }
+  
+  /* Switch Toggle */
+ .currentStatusRow{
+    height: 40px;
+    padding: 8px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	justify-content: space-between;
+   
+} 
+ #user{
+    height: 40px;
+    padding-left: 8px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	align-content: space-between;
+ }
+ .refresh{
+    font-weight:700;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	align-content: space-between;
+    justify-content: flex-end;
+ }
+ .refresh > img{
+	width:14px;
+	height:14px;
+	cursor:pointer;
+ }
+ .break{
+	 width:90%;
+	 border-bottom: 1px solid #E0E4EA;
+	 margin: auto;
+	 clear:both;
+ }
+ .grey{
+	 color:#B6BCC6;
+ }
+ .blue{
+	 color:#1E87F0;
+ }
+ .progress-bar-accomplished{
+	 background-color:#374456;
+ }
+ .progress-bar-left{
+	 background-color:#000;
+ }
+ .progress-bar-tilltheend{
+	 background-color:#000;
+ }
+ .progress{
+	 width:90%;
+	 margin:auto;
+	 height:12px;
+	 border:3px solid #000;
+	 border-radius:0.5em;
+ }
+ 
+ .progressIcons{
+	position: absolute;
+    bottom: 165px;
+    background-color: #1C2026;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0.9;
+	left:87%;
+ }
+ .progressIcons > img{
+	 width:14px;
+ }
+.colorLocked {
+  background-color: #FF0042;
+  border-radius: 15px;
+  padding:3px 15px;
+  margin:2px;
+  color:#fff
+}
+.button{
+	background-color:#fff;
+	padding: 5px;
+	border: 1px solid black;
+	text-align:center;
+	width:232px;
+	height: 30px;
+}
+.logout{
+	background-color:#fff;
+	padding: 5px;
+}
+@media screen and (min-width: 768px) and (max-width: 1146px) {
+   #main-navigation{
+	   display:none!important;
+   }
+   #medium-navigation{
+	   
+	  display:block!important;  
+	  height:45px;
+   }
+   .hr{
+	position: absolute;
+	width: 100%;
+    height: 1px;
+    z-index: 1;
+    background-color: #fff;
+    opacity: 0.2;
+   }
+   .navbar-collapse{
+	   max-width:100%;	   
+	   margin:auto;
+	   display: flex; 
+	   justify-content: center;
+	   align-content: space-between;
+	   
+   }
+}
+@media screen and (max-width: 768px) and (min-width:501px) {
+	
+   #medium-navigation{
+	   
+	  display:none!important;  
+
+   }
+   
+   .navbar-nav{
+	   flex-direction:row;
+   }  
+   .navbar-collapse{
+	   
+	   display: none!important; 
+	   
+	   
+   }
+}
+@media screen and (max-width: 501px){   
+    #logo{      
+        content:url("https://static.gmlinteractive.com/sportsbookv3/assets/logo__stoiximan__small15df60570dad361ef88a951a62529b47.svg");
+    }
+	#main-navigation{
+	   display:none;
+   }
+    
+   #main-navigation{
+	   display:none;
+   }
+   .navbar-nav{
+	   flex-direction:row;
+   }  
+   
+   ul{
+		flex-direction:row;
+	}
+}
